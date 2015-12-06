@@ -4,12 +4,31 @@
     <file url="file://$PROJECT_DIR$/src/com/company/lab0/SwapVariables.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/lab1/ProjectGame.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/lab1/lab2/Labaratorna.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Animal.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Chicken.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Cow.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Ferm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Ferma.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Horse.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Pig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab4/Sheep.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab5/Names.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab5/PhoneBuck.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/lab5/Spisok.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/evenAndOdd/SumEvenAndOdd.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/quadratic/QuadraticEquation.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/randomgame/RandomGame.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/stolovka/DiningRom.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul1/stolovka/Rahunok.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/stolovka/Strava.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/modul1/stolovka/rahunok.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/teylor/SinusGeometric.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Chef.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Chek.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Client.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Restaurant.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Restaurant.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Strava.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Waiter.java" charset="UTF-8" />
   </component>
 </project>
