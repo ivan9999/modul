@@ -23,12 +23,15 @@
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/stolovka/Strava.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul1/teylor/SinusGeometric.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul2/Chef.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Chek.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul2/Client.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul2/Main.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul2/Restaurant.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Restaurant.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/com/company/modul2/Strava.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/com/company/modul2/Waiter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/Account.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/Dialogie.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/Foods.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/ReustaurantApp.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/company/modul2_1/SamovlenjAdd.java" charset="UTF-8" />
   </component>
 </project>
