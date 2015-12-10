@@ -20,19 +20,20 @@ public class ReustaurantApp {
         strava.add("Пельмені");
         strava.add("Риба ");
         strava.add("Борщ з сметаною");
+        strava.add("Фруктовий омлет");
 
         ArrayList<String> cina = new ArrayList<>();
 
-        cina.add("57");
-        cina.add("55");
-        cina.add("60");
-        cina.add("50");
-        cina.add("67");
-        cina.add("62");
-        cina.add("52");
-        cina.add("46");
-        cina.add("42");
-        cina.add("34");
+        cina.add("57, грн");
+        cina.add("55, грн");
+        cina.add("60, грн");
+        cina.add("50, грн");
+        cina.add("67, грн");
+        cina.add("62, грн");
+        cina.add("52, грн");
+        cina.add("46, грн");
+        cina.add("42, грн");
+        cina.add("34, грн");
 
         for (int i = 0; i < strava.size(); i ++){
             System.out.println(strava.get(i));
@@ -42,7 +43,9 @@ public class ReustaurantApp {
 
     }
 
+    public static void put(String strava, Integer cina) {
     }
+}
 
 
 

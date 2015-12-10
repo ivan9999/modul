@@ -14,10 +14,10 @@ import java.util.TreeMap;
 public class Strava extends Foods {
 
 
-    void novaStrava(String Strava, Integer calor) throws IOException {
+    void novaStrava(String Strava, Integer cina) throws IOException {
 
         Map<String, Integer> novaStrava = new TreeMap<>();
-        novaStrava.put(Strava, calor);
+        novaStrava.put(Strava,cina);
 
         PrintWriter writer = new PrintWriter(new FileWriter("C:/modul2_1/new/novaStrava.txt"));
         for (Map.Entry<String, Integer> entry : novaStrava.entrySet()) {

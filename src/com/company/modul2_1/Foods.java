@@ -1,6 +1,8 @@
 package com.company.modul2_1;
 
-import java.io.*;
+import java.io.EOFException;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -12,42 +14,39 @@ public class Foods {
     Map<String, Integer> saveFood = new TreeMap<>();
 
     String strava;
-    Integer addCalorie;
     Map<String, Integer> novaStravaMap = new TreeMap<>();
 
+    Integer cina;
+    private Scanner sc;
+
+    void readFoods() throws FileNotFoundException {
+        Scanner scanner = new Scanner(new File("C:/src/strava.txt"));
+        int size = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < size; i++) {
+            String strava = scanner.nextLine();
+            ReustaurantApp.put(strava,cina);
+        }    }
 
 
-    void setNovaStrava(String strava, Integer calorie) throws IOException {
-        this.addCalorie = calorie;
-        this.strava = strava;
 
-        novaStravaMap.put(strava, addCalorie);
-
-        PrintWriter witer = new PrintWriter(new FileWriter("C:/modul2_1/new/novaStrava.txt"));
-        for (Map.Entry<String, Integer> entry : novaStravaMap.entrySet()) {
-            witer.println(entry.getKey());
-            witer.println(entry.getKey());
-        }
-
-        witer.close();
-        saveFood.putAll(novaStravaMap);
-
-    }
+    
 
     void poshook() throws FileNotFoundException {
 
-        String name = null;
-        Integer kalorie = null;
+        String strava = null;
+        Integer cina = null;
 
 
-        Scanner scanner = new Scanner(new File("C:/modul2_1/new/ful.txt"));
+        Scanner scanner = new Scanner(new File("C:/src/trava.txt"));
         int size = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < size; i++) {
-            name = scanner.nextLine();
-            kalorie = scanner.nextInt();
+            strava = scanner.nextLine();
+            cina = new Integer(scanner.nextLine());
 
+            saveFood.put(strava,cina);
         }
-        saveFood.put(name, kalorie);
+
+
 
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
@@ -57,4 +56,15 @@ public class Foods {
 
     public void menu() {
     }
+    void Stravu () throws EOFException{
+        System.out.println("Ведіть страву");
+        String strava = sc.nextLine();
+
+    }
+
+
+    public void searchFood(String searchFood) {
+    }
 }
+
+

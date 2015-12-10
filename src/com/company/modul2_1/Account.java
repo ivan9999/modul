@@ -16,18 +16,20 @@ public class Account {
     ArrayList<String> akaDataStr = new ArrayList<>();
 
 
-    String name;
-    int age;
+    int strava;
+    Integer cina;
 
 
 
-    void ak (String name, int age, int kalorie) throws IOException {
-        this.name = name;
-        this.age = age;
-        akaDataInteger.put(age, age);
-        akaDataString.put(name, name);
+    void ak (int strava, Integer cina) throws IOException {
 
-        OutputStream f1 = new FileOutputStream("C:/modul2_1/Aka/newAkaDataStr",true);
+        this.cina = cina;
+        this.strava = strava;
+
+        akaDataInteger.put(strava,strava);
+        akaDataInteger.put(cina, cina);
+
+        OutputStream f1 = new FileOutputStream("C:/src/modul2-1/strava.txt",true);
         OutputStreamWriter writer = new OutputStreamWriter(f1);
         BufferedWriter out = new BufferedWriter(writer);
         for(int i = 0; i < akaDataInt.size(); i++)
@@ -35,7 +37,7 @@ public class Account {
             out.write(akaDataInt.get(i));
             out.flush();
         }
-        OutputStream f = new FileOutputStream("C:/modul2_1/Aka/newAkaDataStr", true);
+        OutputStream f = new FileOutputStream("C:/src/modul2-1/strava.txt", true);
         OutputStreamWriter writer1 = new OutputStreamWriter(f);
         BufferedWriter out1 = new BufferedWriter(writer);
         for(int i = 0; i < akaDataStr.size(); i++)
@@ -48,7 +50,7 @@ public class Account {
     }
     void readFile() throws FileNotFoundException{
         Map<Integer, Integer> integerData = new HashMap<>();
-        Scanner scanner = new Scanner(new File("C:/modul2_1/Aka/newAkaDataInteger.txt"));
+        Scanner scanner = new Scanner(new File("C:/src/modul2-1/strava.txt"));
         int sizeInteger = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < sizeInteger; i++){
             Integer data = scanner.nextInt();
@@ -57,7 +59,7 @@ public class Account {
 
         }
         Map<String, String> StringData = new HashMap<>();
-        Scanner scanner1 = new Scanner(new File("C:/modul2_1/Aka/newAkaDataString.txt"));
+        Scanner scanner1 = new Scanner(new File("C:/src/modul2-1/strava.txt"));
         int sizeString = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < sizeString; i++){
             String dataString = scanner.nextLine();
