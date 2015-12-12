@@ -19,7 +19,7 @@ public class Strava extends Foods {
         Map<String, Integer> novaStrava = new TreeMap<>();
         novaStrava.put(Strava,cina);
 
-        PrintWriter writer = new PrintWriter(new FileWriter("C:/modul2_1/new/novaStrava.txt"));
+        PrintWriter writer = new PrintWriter(new FileWriter("C:/untitled3/modul2_1/strava.txt"));
         for (Map.Entry<String, Integer> entry : novaStrava.entrySet()) {
             writer.println(entry.getKey());
             writer.println(entry.getValue());

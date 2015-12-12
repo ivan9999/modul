@@ -13,28 +13,30 @@ public class Main {
         Account aka = new Account();
         ReustaurantApp rs = new ReustaurantApp();
 
-        for (int i = 0; ; i++){
+        for (int i = 0; ; i++) {
 
-            System.out.println("\t\tМожливі дії");
-            System.out.println("+++++++++++++++++++++++++++++++++++++");
-            System.out.println("nЩоб переглянути список страв введіть (Меню)\nЩоб замовити страву введіть (замовити)");
+            System.out.println("\t\t       Можливі дії");
+            System.out.println("***************************************");
+            System.out.println("Щоб переглянути список страв введіть <Меню>\nЩоб замовити страву введіть <замовити>");
             String variant = sc.nextLine();
-            System.out.println("Яку страву ви хочете замовити");
-            String searchFood = sc.nextLine();
-               foods.readFoods();
-            foods.searchFood(searchFood);
-            if(variant.equalsIgnoreCase("замовити")){
+            if (variant.equalsIgnoreCase("замовити")){
+                System.out.println("Яку страву ви хочете замовити");
+                String searchFood = sc.nextLine();
+                foods.searchFood(searchFood);
+                System.out.println("Дякую за замовлення");
+                String end;
 
-            }else if (variant.equalsIgnoreCase("Меню")){
-                foods.menu();
+            }else {
+                System.out.println("Ви не ввели страви, повторіть спробу ");
             }
 
+
+
         }
-
     }
 
+}
 
 
 
-    }
 

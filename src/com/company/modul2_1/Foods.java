@@ -1,70 +1,84 @@
 package com.company.modul2_1;
 
-import java.io.EOFException;
+import com.sun.prism.impl.Disposer;
+
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.TreeMap;
+import java.io.IOException;
+import java.util.*;
 
 /**
  * Created by User on 08.12.2015.
  */
 public class Foods {
-    Map<String, Integer> saveFood = new TreeMap<>();
+    int sum = 0;
+    Disposer.Record rek = new Disposer.Record() {
+        @Override
+        public void dispose() {
 
-    String strava;
-    Map<String, Integer> novaStravaMap = new TreeMap<>();
-
-    Integer cina;
-    private Scanner sc;
+        }
+    };
+    Map<String, Integer> putAll = new LinkedHashMap<>();
+    Map<String, Integer> mainMenu = new TreeMap<>();
+    Map<String, Integer> searchFoods = new HashMap<>();
+    Scanner sc = new Scanner(System.in);
 
     void readFoods() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("C:/src/strava.txt"));
+        Scanner scanner = new Scanner(new File("C:/untitled3/modul2_1/strava.txt"));
         int size = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < size; i++) {
             String strava = scanner.nextLine();
-            ReustaurantApp.put(strava,cina);
-        }    }
+            Integer cina = Integer.parseInt(scanner.nextLine());
+            ReustaurantApp.put(strava, cina);
+        }
+    }
+
+    void searchFood(String searchFood) {
+        for (Map.Entry<String, Integer> entry : mainMenu.entrySet()) {
+            if (entry.getKey().contains(searchFood)) ;
+            searchFoods.put(entry.getKey(), entry.getValue());
+            System.out.println("" + entry.getKey() + "  \t " + entry.getValue());
+        }
+        nextSearchFood();
 
 
+    }
 
-    
+    void nextSearchFood() {
+        if (searchFoods.size() == 0) {
+            System.out.println(" Немає такої страви");
 
-    void poshook() throws FileNotFoundException {
+        } else {
+            System.out.println("Оберіть щось інше ");
+            String element = sc.nextLine();
 
-        String strava = null;
-        Integer cina = null;
+        }
+    }
 
-
-        Scanner scanner = new Scanner(new File("C:/src/trava.txt"));
-        int size = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < size; i++) {
-            strava = scanner.nextLine();
-            cina = new Integer(scanner.nextLine());
-
-            saveFood.put(strava,cina);
+    void readMainMenu() {
+        for (Map.Entry<String, Integer> entry : mainMenu.entrySet()) {
+            System.out.println(entry.getKey() + " - " + entry.getValue());
         }
 
-
-
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-
-
     }
 
-    public void menu() {
-    }
-    void Stravu () throws EOFException{
-        System.out.println("Ведіть страву");
+    void bahatoStrav() throws IOException {
+        System.out.println("Введіть страву ");
         String strava = sc.nextLine();
-
+        bahatoStravbilshe(strava);
     }
 
+    void bahatoStravbilshe(String strava) {
+        searchFoods.clear();
+        int sum1 = 0;
+        for (Map.Entry<String, Integer> entry : mainMenu.entrySet()) {
+            if (entry.getKey().contains(strava)) {
+                searchFoods.put(entry.getKey(), entry.getValue());
+                System.out.println("" + entry.getKey() + "  \t " + entry.getValue());
+                sum1 = entry.getValue();
+            }
 
-    public void searchFood(String searchFood) {
+        }
     }
 }
-
 
